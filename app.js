@@ -1,3 +1,4 @@
+var cors = require('cors') 
 require('dotenv').config()
 var createError = require('http-errors');
 var express = require('express');
@@ -7,6 +8,7 @@ var logger = require('morgan');
 
 
 var app = express();
+app.use(cors())
 
 
 
